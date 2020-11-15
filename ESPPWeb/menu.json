@@ -152,108 +152,418 @@
             ] 
         }
     ],
-    "salads":[
+    "salads":{
+        "itemInfo" : 
         {
-            "itemInfo" : 
+            "itemSizes":[
+                "Small",
+                "Large",
+                "Extra Large"
+            ],
+            "items":[
+                {
+                    "itemName": "Garden",
+                    "itemPrices":[
+                        {
+                            "small": "3.99",
+                            "large": "5.29",
+                            "extraLarge": "8.29"
+                        }
+                    ]
+                },
+                {
+                    "itemName": "Greek",
+                    "itemPrices": [
+                        {
+                            "small": "4.29",
+                            "large": "6.29",
+                            "extraLarge": "10.29"
+                        }
+                    ]
+                },
+                {
+                    "itemName": "Antipasto",
+                    "itemPrices": [
+                        {
+                            "small": "4.79",
+                            "large": "6.79",
+                            "extraLarge": "10.99"
+                        }
+                    ]
+                },
+                {
+                    "itemName": "Tuna",
+                    "itemPrices": [
+                        {
+                            "small": "4.79",
+                            "large": "6.79",
+                            "extraLarge": "10.99"
+                        }
+                    ]
+                },
+                {
+                    "itemName": "Chef",
+                    "itemPrices": [
+                        {
+                            "small": "4.79",
+                            "large": "6.79",
+                            "extraLarge": "10.99"
+                        }
+                    ]
+                },
+                {
+                    "itemName": "Buffalo Chcicken",
+                    "itemPrices": [
+                        {
+                            "small": "5.29",
+                            "large": "7.49",
+                            "extraLarge": "11.99"
+                        }
+                    ]
+                },
+                {
+                    "itemName": "Meatball",
+                    "itemPrices": [
+                        {
+                            "small": "5.29",
+                            "large": "7.49",
+                            "extraLarge": "11.99"
+                        }
+                    ]
+                }
+            ]
+
+        }
+                          
+    },
+    "pizza":{        
+        "pizzaToppings": [
+            "Mozzarella",
+            "Pepperoni",
+            "Sausage",
+            "Meatball",
+            "Salami",
+            "Chicken",
+            "Ham",
+            "Anchovies",
+            "Mushrooms",
+            "Onions",
+            "Peppers",
+            "Broccoli",
+            "Olives",
+            "Tomatoes",
+            "Eggplant",
+            "Spinach",
+            "Garlic",
+            "Pineapple"
+        ],
+        "specialPizzaToppings": [
+            "Bacon",
+            "Clams",
+            "Buffalo Chicken",
+            "BBQ Chicken",
+            "Feta"
+        ],
+        "toppingAcmounts":[
+            "Plain",
+            "1 Item",
+            "2 Items",
+            "3 Items",
+            "4 Items",
+            "5 Items"
+        ],
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large"
+        ],
+        "prices": [
             {
-                "itemSizes":[
-                    "Small",
-                    "Large",
-                    "Extra Large"
+                "small":[
+                    {
+                        "noTop": "8.99",
+                        "oneTop": "9.79",
+                        "twoTop": "10.29",
+                        "threeTop": "10.79",
+                        "fourTop": "11.29",
+                        "fiveTop": "11.99"
+                    }
                 ],
-                "items":[
+                "medium":[
                     {
-                        "itemName": "Garden",
-                        "itemPrices":[
-                            {
-                                "small": "3.99",
-                                "large": "5.29",
-                                "extraLarge": "8.29"
-                            }
-                        ]
-                    },
+                        "noTop": "11.49",
+                        "oneTop": "12.79",
+                        "twoTop": "14.29",
+                        "threeTop": "14.79",
+                        "fourTop": "15.49",
+                        "fiveTop": "16.29"
+                    }
+                ],
+                "large": [
                     {
-                        "itemName": "Greek",
-                        "itemPrices": [
-                            {
-                                "small": "4.29",
-                                "large": "6.29",
-                                "extraLarge": "10.29"
-                            }
-                        ]
-                    },
+                        "noTop": "14.49",
+                        "oneTop": "15.99",
+                        "twoTop": "17.39",
+                        "threeTop": "17.99",
+                        "fourTop": "18.99",
+                        "fiveTop": "20.29"
+                    }
+                ],
+                "specialTop": [
                     {
-                        "itemName": "Antipasto",
-                        "itemPrices": [
-                            {
-                                "small": "4.79",
-                                "large": "6.79",
-                                "extraLarge": "10.99"
-                            }
-                        ]
-                    },
-                    {
-                        "itemName": "Tuna",
-                        "itemPrices": [
-                            {
-                                "small": "4.79",
-                                "large": "6.79",
-                                "extraLarge": "10.99"
-                            }
-                        ]
-                    },
-                    {
-                        "itemName": "Chef",
-                        "itemPrices": [
-                            {
-                                "small": "4.79",
-                                "large": "6.79",
-                                "extraLarge": "10.99"
-                            }
-                        ]
-                    },
-                    {
-                        "itemName": "Buffalo Chcicken",
-                        "itemPrices": [
-                            {
-                                "small": "5.29",
-                                "large": "7.49",
-                                "extraLarge": "11.99"
-                            }
-                        ]
-                    },
-                    {
-                        "itemName": "Meatball",
-                        "itemPrices": [
-                            {
-                                "small": "5.29",
-                                "large": "7.49",
-                                "extraLarge": "11.99"
-                            }
-                        ]
+                        "small": "9.79",
+                        "medium": "13.79",
+                        "large": "16.99"
                     }
                 ]
-
             }
-                          
-        }
-    ],
-    "pizza":[
+        ]
+    },
+    "grinders":{
+        "sizes": [
+            "Small",
+            "Large"
+        ],
+        "grinderTypes": [
+            {
+                "itemName": "Veggie",
+                "price":[
+                    "5.25",
+                    "6.25"
+                ]
+            },
+            {
+                "itemName": "Meatball",
+                "price":[
+                    "5.99",
+                    "6.99"
+                ]
+            },
+            {
+                "itemName": "Sausage",
+                "price":[
+                    "5.99",
+                    "6.99"
+                ]
+            },
+            {
+                "itemName": "Ham",
+                "price":[
+                    "5.99",
+                    "6.99"
+                ]
+            },
+            {
+                "itemName": "Salami",
+                "price":[
+                    "5.99",
+                    "6.99"
+                ]
+            },
+            {
+                "itemName": "Turkey",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Capicola",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Pastrami",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Tuna",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Genoa",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Eggplant",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Pepperoni",
+                "price":[
+                    "6.29",
+                    "7.29"
+                ]
+            },
+            {
+                "itemName": "Combo",
+                "price":[
+                    "6.79",
+                    "7.79"
+                ]
+            },
+            {
+                "itemName": "BLT",
+                "price":[
+                    "6.79",
+                    "7.79"
+                ]
+            },
+            {
+                "itemName": "Chicken",
+                "price":[
+                    "6.79",
+                    "7.79"
+                ]
+            },
+            {
+                "itemName": "Roast Beef",
+                "price":[
+                    "6.99",
+                    "7.99"
+                ]
+            },
+            {
+                "itemName": "Steak",
+                "price":[
+                    "6.99",
+                    "7.99"
+                ]
+            },
+            {
+                "itemName": "Buffalo Chicken",
+                "price":[
+                    "6.99",
+                    "7.99"
+                ]
+            },
+            {
+                "itemName": "BBQ Chicken",
+                "price":[
+                    "6.99",
+                    "7.99"
+                ]
+            }
+        ],
+        "toppings":[
+            "Lettuce",
+            "Tomato",
+            "Onions",
+            "Mushrooms",
+            "Roasted Peppers",
+            "Green Peppers",
+            "Banana Peppers",
+            "Olives",
+            "Pickles"
+        ],
+        "cheeseTypes":[
+            "Provolone",
+            "American",
+            "Mozzarella"
+        ],
+        "condiments":[
+            "Oil & Vinegar",
+            "Mayonnaise",
+            "BBQ",
+            "Buffalo",
+            "Mustard"
+        ],
+        "extras":[   
+            {
+                "itemName": "Extra Cheese",
+                "price": ".50"
+            },
+            {
+                "itemName": "w/Bacon",
+                "price": "1.00"
+            }           
+        ]
+    },
+    "dinners":{
+        "pastaDinners":{
+            "pastaTypes":[
+                "Spaghetti",
+                "Shells",
+                "Ziti"
+            ],
+            "toppings":[
+                "Meatball",
+                "Sausage",
+                "Eggplant"
+            ],
+            "pastaPrices":{
+                "basePrice": "9.39",
+                "w/topping": "10.49",
+                "w/mozz": "1.50"
+            }
+        },
+        "OtherDinners":[
+            {
+                "itemName":"Lasagna",
+                "price": "11.49"
+            },
+            {
+                "itemName":"Stuffed Shells",
+                "price": "10.49"
+            },
+            {
+                "itemName":"Cheese Ravioli",
+                "price": "8.99"
+            },
+            {
+                "itemName":"Meat Ravioli",
+                "price": "9.49"
+            } 
+            
+        ]
+    },
+    "breads":{
+        "breadType":[
+            {
+                "itemName":"Calzone",
+                "price":{
+                    "small": "8.79",
+                    "large": "10.99"
+                }
+            },
+            {
+                "itemName":"Stuffed Bread",
+                "price":{
+                    "small": "8.79",
+                    "large": "10.99"
+                }
+            }
+        ]
+    },
+    "dressings":{
+        "dressingNames":[
+            "Bleu Cheese",
+            "Creamy Italian",
+            "Italian",
+            "French",
+            "House",
+            "Parmesan Pepercorn",
+            "Ranch"
+        ]
+    },
+    "dessert":{
+        "itemName": "Baklava",
+        "itemPrice": "3.25"
+    }
 
-    ],
-    "grinders":[
 
-    ],
-    "dinners":[
-
-    ],
-    "breads":[
-
-    ],
-    "dressings":[
-
-    ],
-    "dessert":[
-
-    ]
 }
