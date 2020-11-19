@@ -18,27 +18,11 @@ app.get('/index', (req,res)=>{
     res.render('index')
 })
 
-app.get('/about', (req,res)=>{
+app.get('/contact', (req,res)=>{
     res.render('about')
 })
 
 app.get('/menu', (req,res)=>{
-
-    const menu = {
-        "appetizers": [
-            {
-                "menuItems" : [
-                    {
-                        "itemName": "Hot Wings"
-                    },
-                    {
-                        "itemName": "Mozz Sticks"
-                    }
-                ]
-            }
-        ]
-    }
-
     res.render('menu')
 })
 

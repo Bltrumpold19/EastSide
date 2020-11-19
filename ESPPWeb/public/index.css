@@ -1,0 +1,86 @@
+/* Food Section*/
+#aboutFood{
+    width: 100%;
+    height: 500px;
+    border: 1px solid aqua;
+}
+#foodText{
+    width: 35%;
+    height: 80%;
+    float: left;
+    margin: 2.5% 5% 0% 10%;
+    border: 1px solid green;
+}
+/* Header */
+#headContFood{
+    width: 50%;
+    margin: 5% 25% 0 25%;
+}
+#foodHeader{
+    width: 50%;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-left: 10%;
+}
+#oneHr{
+    width: 80%;
+}
+/* Text */
+#foodTextCont{
+    width: 80%;
+    height: 70%;
+    border: 1px solid red;
+    margin: 2.5% 0 0 10%;
+}
+/* Food Image */
+#imageFood{
+    width: 35%;
+    height: 80%;
+    float: left;
+    margin: 2.5% 10% 0% 5%;
+    border: 1px solid pink;
+}
+
+
+/* History Section */
+#historyOne{
+    width: 100%;
+    height: 500px;
+    border: 1px solid red;
+}
+/* History Image*/
+#imageHistoryOne{
+    width: 35%;
+    height: 80%;
+    float: left;
+    margin: 2.5% 5% 0% 10%;
+    border: 1px solid blue;
+}
+#historyTextOne{
+    width: 35%;
+    height: 80%;
+    float: left;
+    margin: 2.5% 10% 0% 5%;
+    border: 1px solid green;
+}
+/* History Header*/
+#historyOneHeadCont{
+
+}
+#historyOneHeader{
+
+}
+/* History One text */
+#historyOneTextCont{
+
+}
+#historyOnePara{
+
+}
+
+
+/* History Two */
+#historyTwo{
+    height: 500px;
+    border: 1px solid purple;
+}
