@@ -14,9 +14,18 @@ app.use(express.urlencoded({extended:false}))
 
 
 hbs.registerHelper("getMenuData", (id,cb)=>{
+
+    var str = ''
+
     let data = fs.readFileSync(__dirname + '/menu.json')
     let menu = JSON.parse(data)
-    console.log(menu.appetizers.itemSizesSize[0])
+
+    for (var i = 0; i < menu.pizza.pizzaToppings.length; i++)
+    {
+        console.log(menu.pizza.pizzaToppings[i])
+    }
+
+    //console.log(menu.appetizers.itemSizesSize[0])
     //console.log(menu)
 })
 
