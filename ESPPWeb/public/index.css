@@ -65,14 +65,24 @@
 }
 /* History Header*/
 #historyOneHeadCont{
-
+    width: 50%;
+    margin: 5% 25% 0 25%;
 }
 #historyOneHeader{
-
+    width: 50%;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-left: 10%;
+}
+#historyHr{
+    width: 80%;
 }
 /* History One text */
 #historyOneTextCont{
-
+    width: 80%;
+    height: 70%;
+    border: 1px solid red;
+    margin: 2.5% 0 0 10%;
 }
 #historyOnePara{
 
@@ -83,4 +93,37 @@
 #historyTwo{
     height: 500px;
     border: 1px solid purple;
+}
+#historyTwoCont{
+    width: 35%;
+    height: 80%;
+    float: left;
+    margin: 2.5% 5% 0% 10%;
+    border: 1px solid green;
+}
+#historyTwoHeadCont{
+    width: 50%;
+    margin: 5% 25% 0 25%;
+}
+#historyTwoHeader{
+    width: 50%;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-left: 10%;
+}
+#historyTwoTextCont{
+    width: 80%;
+    height: 70%;
+    border: 1px solid red;
+    margin: 2.5% 0 0 10%;
+}
+#historyTwoPara{
+
+}
+#historyTwoImage{
+    width: 35%;
+    height: 80%;
+    float: left;
+    margin: 2.5% 10% 0% 5%;
+    border: 1px solid pink;
 }
