@@ -198,8 +198,8 @@
             "BBQ Chicken",
             "Feta"
         ],
-        "toppingAcmounts":[
-            "Plain",
+        "toppingAmounts":[
+            "Mozz",
             "1 Item",
             "2 Items",
             "3 Items",
@@ -211,47 +211,37 @@
             "Medium",
             "Large"
         ],
-        "prices": [
-            {
-                "small":[
-                    {
-                        "noTop": "8.99",
-                        "oneTop": "9.79",
-                        "twoTop": "10.29",
-                        "threeTop": "10.79",
-                        "fourTop": "11.29",
-                        "fiveTop": "11.99"
-                    }
-                ],
-                "medium":[
-                    {
-                        "noTop": "11.49",
-                        "oneTop": "12.79",
-                        "twoTop": "14.29",
-                        "threeTop": "14.79",
-                        "fourTop": "15.49",
-                        "fiveTop": "16.29"
-                    }
-                ],
-                "large": [
-                    {
-                        "noTop": "14.49",
-                        "oneTop": "15.99",
-                        "twoTop": "17.39",
-                        "threeTop": "17.99",
-                        "fourTop": "18.99",
-                        "fiveTop": "20.29"
-                    }
-                ],
-                "specialTop": [
-                    {
-                        "small": "9.79",
-                        "medium": "13.79",
-                        "large": "16.99"
-                    }
-                ]
-            }
-        ]
+        "prices":{
+            "small":[
+                "8.99",
+                "9.79",
+                "10.29",
+                "10.79",
+                "11.29",
+                "11.99"
+            ],
+            "medium":[
+                "11.49",
+                "12.79",
+                "14.29",
+                "14.79",
+                "15.49",
+                "16.29"
+            ],
+            "large": [
+                "14.49",
+                "15.99",
+                "17.39",
+                "17.99",
+                "18.99",
+                "20.29"
+            ],
+            "specialTop": [
+                "9.79",
+                "13.79",
+                "16.99"
+            ]
+        }
     },
     "grinders":{
         "sizes": [

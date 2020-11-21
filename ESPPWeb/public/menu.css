@@ -1,0 +1,50 @@
+#topCont{
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
+    margin-top: 1.5%;
+}
+#specialsCont{
+
+}
+/* Pizza section */
+#pizzaCont{
+    width: 70%;
+    height: 450px;
+    border: 1px solid blue;
+    margin: 2.5% 15% 0 15%;
+}
+#pizzaContHead{
+    width: 80%;
+    height: 20%;
+    border: 1px solid green;
+    margin: 1.5% 10% 0 10%;
+}
+#pizzaTopCont{
+    width: 80%;
+    height: 20%;
+    border: 1px solid purple;
+    margin: 1.5% 10% 0 10%;
+}
+#sizesCont{
+    width: 80%;
+    height: 8%;
+    border:1px solid orange;
+    margin: 1% 10% 0 10%;
+}
+#toppingAmountCont{
+    width: 10%;
+    height: 35%;
+    border: 1px solid aqua;
+    margin: 1% 0% 0 10%;
+    float: left;
+}
+#pizzaPriceCont{
+    width: 70%;
+    height: 35%;
+    border:1px solid red;
+    float: left;
+    margin: 1% 0 0 0;
+
+}
+/* Grinder Section */
