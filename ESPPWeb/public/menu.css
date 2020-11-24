@@ -52,7 +52,7 @@
     width: 70%;
     height: 600px;
     border: 1px solid green;
-    margin: 2.5% 15% 2.5% 15%;
+    margin: 2.5% 15% 0 15%;
 }
 #grinderHeader{
     width: 80%;
@@ -99,4 +99,114 @@
     float: left;
     border: 1px solid aqua;
     margin: 1.5% 10% 0 0%;
+}
+/* Dinner Sections */
+#dinnerCont{
+    width: 35%;
+    height: 500px;
+    float: left;
+    margin: 2.5% 0 0 15%;
+    border: 1px solid red;
+}
+#dinnerHeader{
+    width: 80%;
+    height: 10%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid blue;
+}
+#pastaDinnerCont{
+    width: 80%;
+    height:50%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid black;
+}
+#otherDinnersCont{
+    width: 80%;
+    height: 30%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid green;
+}
+.pastaDinner{
+    width: 90%;
+    height: 40%;
+    margin: 3.5% 5% 0 5%;
+    border: 1px solid orange;
+}
+/* Breads Section */
+#breadCont{
+    width: 35%;
+    height: 500px;
+    float: left;
+    margin: 2.5% 15% 0 0%;
+    border: 1px solid blue;
+}
+#breadHeader{
+    width: 80%;
+    height: 10%;
+    margin: 2% 10% 0 10%;
+    border: 1px solid green;
+}
+#breads{
+    width: 80%;
+    height: 70%;
+    margin: 2% 10% 0 10%;
+    border: 1px solid red;
+}
+/* Apps Section */
+#appsCont{
+    width: 35%;
+    height: 500px;
+    float: left;
+    margin: 2.5% 0 0 15%;
+    border: 1px solid purple;
+}
+#appsHeader{
+    width: 80%;
+    height: 10%;
+    margin: 2% 10% 0 10%;
+    border: 1px solid green;
+}
+#itemSizesNum{
+    width: 80%;
+    height: 8%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid red;
+}
+#appItems{
+    width: 80%;
+    height: 40%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid blue;
+}
+#appItemsNonNum{
+    width: 80%;
+    height: 30%;
+    margin: 1.5% 10% 5% 10%;
+    border: 1px solid black;
+}
+/* Salads Section */
+#saladsCont{
+    width: 35%;
+    height: 500px;
+    float: left;
+    margin: 2.5% 15% 0 0%;
+    border: 1px solid blue;
+}
+#saladsHead{
+    width: 80%;
+    height: 10%;
+    margin: 2% 10% 0 10%;
+    border: 1px solid green; 
+}
+#saladSizes{
+    width: 80%;
+    height: 8%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid red;
+}
+#salads{
+    width: 80%;
+    height: 60%;
+    margin: 1.5% 10% 0 10%;
+    border: 1px solid black;
 }

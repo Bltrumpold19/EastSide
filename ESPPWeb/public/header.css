@@ -29,5 +29,7 @@
 a:hover{
     color: gray;
     text-decoration: none;
+    transition-duration: .20s;
+    transition-timing-function: ease;
     
 }

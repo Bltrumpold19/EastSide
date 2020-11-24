@@ -105,6 +105,118 @@ hbs.registerHelper("getMenuDataGrinder", (id,cb)=>{
     return new hbs.handlebars.SafeString(str)
 })
 
+hbs.registerHelper("getDinnerData", ()=>{
+    var str = ''
+
+    str += '<div id="dinnerCont">'
+    str += '<div id="dinnerHeader">'
+    str += '</div>' // end dinnerHeader
+    str += '<div id="pastaDinnerCont">'
+    str += '<div class="pastaDinner">'
+    for (var i = 0; i < menu.dinners.pastaDinners.pastaTypes.length; i++){
+        str += menu.dinners.pastaDinners.pastaTypes[i]
+    }
+    str += menu.dinners.pastaDinners.pastaPrices.basePrice
+    str += '</div>' // end pastaDinner
+    str += '<div class="pastaDinner">'
+    for (var i = 0; i < menu.dinners.pastaDinners.toppings.length; i++){
+        str += menu.dinners.pastaDinners.toppings[i]
+    }
+    str += menu.dinners.pastaDinners.pastaPrices.withTopping
+    str += menu.dinners.pastaDinners.pastaPrices.withMozz
+    str += '</div>' // end pastaDinner
+    str += '</div>' // end pastaDinnerCont
+    str += '<div id="otherDinnersCont">'
+    for(var i = 0; i < menu.dinners.otherDinners.length; i++)
+    {
+        str += menu.dinners.otherDinners[i].itemName
+        str += menu.dinners.otherDinners[i].price
+    }
+    str += '</div>' // end otherDinnersCont
+    str += '</div>' // end dinnerCont
+    return new hbs.handlebars.SafeString(str)
+
+})
+
+hbs.registerHelper("getBreadData", ()=>{
+    var str = ''
+    str += '<div id="breadCont">'
+    str += '<div id="breadHeader">'
+    str += '</div>' // end breadHeader
+    str += '<div id="breads">'
+    for(var i = 0; i < menu.breads.breadType.length; i++)
+    {
+        str += menu.breads.sizes[i]
+        str += menu.breads.breadType[i].itemName
+        str += menu.breads.breadType[i].price.small
+        str += menu.breads.breadType[i].price.large
+    }
+    str += '</div>' // end breads
+    str += '</div>' // end breadCont
+    return new hbs.handlebars.SafeString(str)
+})
+
+hbs.registerHelper("getDataApps", ()=>{
+    var str = ''
+    str += '<div id="appsCont">'
+    str += '<div id="appsHeader">'
+    str += '</div>' // end appsHeader
+    str += '<div id="itemSizesNum">'
+    for (var i = 0; i < menu.appetizers.itemSizesNumeric.length; i++)
+    {
+        str += menu.appetizers.itemSizesNumeric[i]
+    }
+    str += '</div>' // end itemSizesNum
+    str += '<div id="appItems">'
+    for(var i = 0; i < menu.appetizers.appItems.length; i++)
+    {
+        str += menu.appetizers.appItems[i].itemName
+        for(var x = 0; x < menu.appetizers.appItems[i].price[x]; x++)
+        {
+            str += menu.appetizers.appItems[i].price[x]
+        }
+    }
+    str += '</div>' // end appItems
+    str += '<div id="appItemsNonNum">'
+    for(var i = 0; i < menu.appetizers.itemSizesSize.length; i++)
+    {
+        str += menu.appetizers.itemSizesSize[i]
+    }
+    for(var i = 0; i < menu.appetizers.appsNonNumericSizes.length; i++)
+    {
+        str += menu.appetizers.appsNonNumericSizes[i].itemName
+        for(var x = 0; x < menu.appetizers.appsNonNumericSizes[i].price.length; x++){
+            str += menu.appetizers.appsNonNumericSizes[i].price[x]
+        }
+    }
+    str += '</div>' // end appItemsNonNum
+    str += '</div>' // end appsCont
+    return new hbs.handlebars.SafeString(str)
+})
+
+hbs.registerHelper("getDataSalads", ()=>{
+    var str = ''
+    str += '<div id="saladsCont">'
+    str += '<div id="saladsHead">'
+    str += '</div>' // end saladsHead
+    str += '<div id="saladSizes">'
+    for(var i = 0; i < menu.salads.itemSizes.length; i++){
+        str += menu.salads.itemSizes[i]
+    }
+    str += '</div>' // end saladSizes
+    str += '<div id="salads">'
+    for(var i = 0; i < menu.salads.items.length; i++)
+    {
+        str += menu.salads.items[i].itemName
+        for(var x = 0; x < menu.salads.items[i].price.length; x++)
+        {
+            str += menu.salads.items[i].price[x]
+        }      
+    }
+    str += '</div>' // end salads
+    str += '</div>' // end saladsCont
+    return new hbs.handlebars.SafeString(str)
+})
 
 app.get('/', (req,res)=>{
     res.render('index')
@@ -115,7 +227,7 @@ app.get('/index', (req,res)=>{
 })
 
 app.get('/contact', (req,res)=>{
-    res.render('about')
+    res.render('contact')
 })
 
 app.get('/menu', (req,res)=>{

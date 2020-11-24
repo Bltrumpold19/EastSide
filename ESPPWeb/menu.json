@@ -13,83 +13,66 @@
         "appItems" : [
             {
                 "itemName": "Hot Wings",
-                "itemPrice":[
-                    {
-                        "six": "4.99",
-                        "twelve": "7.79",
-                        "eighteen": "10.79",
-                        "twenyfour": "13.49"
-                    }
+                "price":[
+                    "4.99",
+                    "7.79",
+                    "10.79",
+                    "13.49"
                 ]             
             },
             {
                 "itemName": "Mozz Sticks",
-                "itemPrice":[
-                    {
-                        "six": "4.99",
-                        "twelve": "7.79",
-                        "eighteen": "10.79",
-                        "twenyfour": "13.49"
-                    }
+                "price":[
+                    "4.99",
+                    "7.79",
+                    "10.79",
+                    "13.49"
                 ]
             },
             {
                 "itemName": "Jalapeno Poppers",
-                "itemPrice":[
-                    {
-                        "six": "4.99",
-                        "twelve": "7.79",
-                        "eighteen": "10.79",
-                        "twenyfour": "13.49"
-                    }
+                "price":[
+                    "4.99",
+                    "7.79",
+                    "10.79",
+                    "13.49"
                 ]
             },
             {
                 "itemName": "Chicken Nuggets",
-                "itemPrice":[
-                    {
-                        "six": "4.99",
-                        "twelve": "7.79",
-                        "eighteen": "10.79",
-                        "twenyfour": "13.49"
-                    }
+                "price":[
+                        "4.99",
+                        "7.79",
+                        "10.79",
+                        "13.49"
                 ]
-            },
+            }
+        ],
+        "appsNonNumericSizes":[
             {
                 "itemName": "French Fries",
-                "itemPrice":[
-                    {
-                        "smallPrice": "4.79",
-                        "largePrice": "6.99"
-                    }
+                "price":[
+                    "4.79",
+                    "6.99"
                 ]
             },
             {
                 "itemName": "Pizza Fries",
-                "itemPrice":[
-                    {
-                        "smallPrice": "7.29",
-                        "largePrice": "10.29"
-                    }
+                "price":[       
+                    "7.29",
+                    "10.29"           
                 ]
             },
             {
                 "itemName": "Garlic Bread",
-                "itemPrice":[
-                    {
-                        "smallPrice": "2.99",
-                        "largePrice": "3.49",
-                        "additionalToppingsPrice":[
-                            {
-                                "smallPriceMozz": "3.79",
-                                "largePriceMozz": "4.49"
-                            }
-                        ]
-                    }
-                ]
-                                  
+                "price":[  
+                    "2.99",
+                    "3.49",
+                    "3.79",
+                    "4.49"                                  
+                ]                  
             }
-        ]     
+        ]      
     },
     "salads":{
         "itemSizes":[
@@ -100,72 +83,58 @@
         "items":[
             {
                 "itemName": "Garden",
-                "itemPrices":[
-                    {
-                        "small": "3.99",
-                        "large": "5.29",
-                        "extraLarge": "8.29"
-                    }
+                "price":[
+                    "3.99",
+                    "5.29",
+                    "8.29"
                 ]
             },
             {
                 "itemName": "Greek",
-                "itemPrices": [
-                    {
-                        "small": "4.29",
-                        "large": "6.29",
-                        "extraLarge": "10.29"
-                    }
+                "price":[
+                    "4.29",
+                    "6.29",
+                    "10.29"
                 ]
             },
             {
                 "itemName": "Antipasto",
-                "itemPrices": [
-                    {
-                        "small": "4.79",
-                        "large": "6.79",
-                        "extraLarge": "10.99"
-                    }
+                "price":[
+                    "4.79",
+                    "6.79",
+                    "10.99"
                 ]
             },
             {
                 "itemName": "Tuna",
-                "itemPrices": [
-                    {
-                        "small": "4.79",
-                        "large": "6.79",
-                        "extraLarge": "10.99"
-                    }
+                "price":[
+                    "4.79",
+                    "6.79",
+                    "10.99"
                 ]
             },
             {
                 "itemName": "Chef",
-                "itemPrices": [
-                    {
-                        "small": "4.79",
-                        "large": "6.79",
-                        "extraLarge": "10.99"
-                    }
+                "price":[
+                    "4.79",
+                    "6.79",
+                    "10.99"
                 ]
             },
             {
                 "itemName": "Buffalo Chcicken",
-                "itemPrices": [
-                    {
-                        "small": "5.29",
-                        "large": "7.49",
-                        "extraLarge": "11.99"
-                    }
+                "price":[
+                    "5.29",
+                    "7.49",
+                    "11.99"
                 ]
             },
             {
                 "itemName": "Meatball",
-                "itemPrices": [
-                    {
-                        "small": "5.29",
-                        "large": "7.49",
-                        "extraLarge": "11.99"
-                    }
+                "price":[
+                    "5.29",
+                    "7.49",
+                    "11.99"
                 ]
             }
         ]                              
@@ -435,11 +404,11 @@
             ],
             "pastaPrices":{
                 "basePrice": "9.39",
-                "w/topping": "10.49",
-                "w/mozz": "1.50"
+                "withTopping": "10.49",
+                "withMozz": "1.50"
             }
         },
-        "OtherDinners":[
+        "otherDinners":[
             {
                 "itemName":"Lasagna",
                 "price": "11.49"
@@ -460,6 +429,10 @@
         ]
     },
     "breads":{
+        "sizes":[
+            "Small",
+            "Large"
+        ],
         "breadType":[
             {
                 "itemName":"Calzone",
