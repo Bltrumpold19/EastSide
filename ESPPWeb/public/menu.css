@@ -10,20 +10,23 @@
 /* Pizza section */
 #pizzaCont{
     width: 70%;
-    height: 450px;
-    border: 1px solid blue;
+    height: 550px;
+    /*-moz-box-shadow: 0 0 3px grey;
+    -webkit-box-shadow: 0 0 10px grey;
+    box-shadow: 0px 2px 5px #888, 0px -2px 5px #888;*/
     margin: 2.5% 15% 0 15%;
+    border-radius: 2px;
 }
 #pizzaContHead{
     width: 80%;
     height: 20%;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     margin: 1.5% 10% 0 10%;
 }
 #pizzaTopCont{
     width: 80%;
     height: 20%;
-    border: 1px solid purple;
+    /*border: 1px solid purple;*/
     margin: 1.5% 10% 0 10%;
 }
 #sizesCont{
@@ -40,7 +43,7 @@
     float: left;
 }
 #pizzaPriceCont{
-    width: 70%;
+    width: 80%;
     height: 35%;
     border:1px solid red;
     float: left;
@@ -209,4 +212,68 @@
     height: 60%;
     margin: 1.5% 10% 0 10%;
     border: 1px solid black;
+}
+/* Headers */
+#pizzaHead{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    text-align: center;
+}
+#hrHeadPizza{
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+#grinderHead{
+    font-family: "Times New Roman", Times, serif;
+}
+#dinnerHead{
+    font-family: "Times New Roman", Times, serif;
+}
+#breadHead{
+    font-family: "Times New Roman", Times, serif;
+}
+#appHead{
+    font-family: "Times New Roman", Times, serif;
+}
+#saladHead{
+    font-family: "Times New Roman", Times, serif;
+}
+/* Pizza Text */
+#paraTopping{
+    width: 50%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin: 0 25% 0 25%;
+}
+#pizzaSizes{
+    width: 40%;
+    margin: 0 30% 0 30%;
+/*border: 1px solid red;*/
+    text-align: center;
+    word-spacing: 50px;
+}
+.pizzaPrices{
+    width: 40%;
+    border: 1px solid blue;
+    margin: .5% 0 0 17.5%;
+    text-align: center;
+    word-spacing: 50px;
+}
+.pizzaTable{
+    width: 40%;
+    margin: 0 30% 0 30%;
+    /*border: 1px solid blue;*/
+}
+.pizzaTableCont{
+    width: 80%;
+    margin: 2% 10% 0% 10%;
+    /*border: 1px solid red;*/
+}
+.sizes{
+    font-size: 1em;
+    font-weight: 450;
+}
+.toppingAmount{
+    font-size: 1em;
+    font-weight: 450;
 }

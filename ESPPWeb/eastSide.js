@@ -20,18 +20,65 @@ hbs.registerHelper("getMenuDataPizza", (id,cb)=>{
 
     str += '<div id="pizzaCont">'
     str += '<div id="pizzaContHead">'
+    str += '<h2 id="pizzaHead">Pizza</h2>'
+    str += '<hr id="hrHeadPizza">'
     str += '</div>' //  end pizzaContHead
     str += '<div id="pizzaTopCont">'
+    str += '<p id="paraTopping">'
     for (var i = 0; i < menu.pizza.pizzaToppings.length; i++)
     {
-        str += menu.pizza.pizzaToppings[i]
+        str += menu.pizza.pizzaToppings[i] + " "
+        if (i == 6 || i == 12){
+            str += '<br>'
+        }
     }
+    str += '</p>'
     str += '</div>' // end pizzaTopCont
-    str += '<div id="sizesCont">'
+    str += '<div class="table-responsive pizzaTableCont">'
+    str += '<table class="table table-sm table-borderless pizzaTable">'
+    str += '<thead>'
+    str += '<tr>'
+    str += '<th scope="col"></th>'
     for (var i = 0; i < menu.pizza.sizes.length; i++)
     {
-        str += '<li class="pizzaSize">' + menu.pizza.sizes[i] + '</li>'
+        str += '<th scope="col" class="sizes">' + menu.pizza.sizes[i] + '</th>'
     }
+    str += '</tr>'
+    str += '</thead>'
+    str += '<tbody>'
+    for (var i = 0; i < menu.pizza.toppingAmounts.length; i++)
+    {
+        str += '<tr>'
+        str += '<th scope="row" class="toppingAmount">' + menu.pizza.toppingAmounts[i] + '</th>'
+        str += '<td>' + menu.pizza.prices.small[i] + '</td>'
+        str += '<td>' +  menu.pizza.prices.medium[i] + '</td>'
+        str += '<td>' + menu.pizza.prices.large[i] + '</td>'
+        str += '</tr>'
+    }
+    str += '</tbody>'
+    str += '</table>'
+    str += '</div>' // end tableDiv
+    str += '</div>'
+
+    //str += '<div id="pizzaTopCont">'
+    /*str += '<p id="paraTopping">'
+    for (var i = 0; i < menu.pizza.pizzaToppings.length; i++)
+    {
+        str += menu.pizza.pizzaToppings[i] + " "
+        if (i == 6 || i == 12){
+            str += '<br>'
+        }
+    }
+    str += '</p>'
+    str += '</div>' // end pizzaTopCont
+    str += '<div id="sizesCont">'*/
+
+    /*str += '<p id="pizzaSizes">'
+    for (var i = 0; i < menu.pizza.sizes.length; i++)
+    {
+        str += menu.pizza.sizes[i] + ' '
+    }
+    str += '</p>'
     str += '</div>' // end sizesCont
     str += '<div id="toppingAmountCont">'
     for (var i = 0; i < menu.pizza.toppingAmounts.length; i++)
@@ -42,16 +89,18 @@ hbs.registerHelper("getMenuDataPizza", (id,cb)=>{
     str += '<div id="pizzaPriceCont">'
     for (var i = 0; i < menu.pizza.prices.small.length; i++)
     {
-        /*str += '<li class="smallPrices">' + menu.pizza.prices.small[i] + '</li>'
-        str += '<li class="mediumPrices">' + menu.pizza.prices.medium[i] + '</li>'
-        str += '<li class="largePrices">' + menu.pizza.prices.large[i] + '</li>'*/
+        str += '<p class="pizzaPrices">'
+        str += menu.pizza.prices.small[i] + ' '
+        str += menu.pizza.prices.medium[i] + ' '
+        str += menu.pizza.prices.large[i] + ' '
+        str += '</p>'
     }
     for(var i = 0; i < menu.pizza.prices.specialTop.length; i++)
     {
         str += '<li class="specialPrices">' + menu.pizza.prices.specialTop[i] + '</li>'
     }
-    str += '</div>' // end pizzaPriceCont
-    str += '</div>' // end pizzaCont
+    str += '</div>' // end pizzaPriceCont*/
+    //str += '</div>' // end pizzaCont
     return new hbs.handlebars.SafeString(str)
 })
 
@@ -59,6 +108,7 @@ hbs.registerHelper("getMenuDataGrinder", (id,cb)=>{
     var str = ''
     str += '<div id="grinderCont">'
     str += '<div id="grinderHeader">'
+    str += '<h2 id="grinderHead">Grinders</h2>'
     str += '</div>' // end grinderHeader
     str += '<div id="grinderSizes">'
     for(var i = 0; i < menu.grinders.sizes.length; i++)
@@ -110,6 +160,7 @@ hbs.registerHelper("getDinnerData", ()=>{
 
     str += '<div id="dinnerCont">'
     str += '<div id="dinnerHeader">'
+    str += '<h2 id="dinnerHead">Dinners</h2>'
     str += '</div>' // end dinnerHeader
     str += '<div id="pastaDinnerCont">'
     str += '<div class="pastaDinner">'
@@ -142,6 +193,7 @@ hbs.registerHelper("getBreadData", ()=>{
     var str = ''
     str += '<div id="breadCont">'
     str += '<div id="breadHeader">'
+    str += '<h2 id="breadHead">Breads</h2>'
     str += '</div>' // end breadHeader
     str += '<div id="breads">'
     for(var i = 0; i < menu.breads.breadType.length; i++)
@@ -160,6 +212,7 @@ hbs.registerHelper("getDataApps", ()=>{
     var str = ''
     str += '<div id="appsCont">'
     str += '<div id="appsHeader">'
+    str += '<h2 id="appHead">Appetizers</h2>'
     str += '</div>' // end appsHeader
     str += '<div id="itemSizesNum">'
     for (var i = 0; i < menu.appetizers.itemSizesNumeric.length; i++)
@@ -198,6 +251,7 @@ hbs.registerHelper("getDataSalads", ()=>{
     var str = ''
     str += '<div id="saladsCont">'
     str += '<div id="saladsHead">'
+    str += '<h2 id="saladHead">Salads</h2>'
     str += '</div>' // end saladsHead
     str += '<div id="saladSizes">'
     for(var i = 0; i < menu.salads.itemSizes.length; i++){
