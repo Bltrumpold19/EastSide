@@ -109,14 +109,78 @@ hbs.registerHelper("getMenuDataGrinder", (id,cb)=>{
     str += '<div id="grinderCont">'
     str += '<div id="grinderHeader">'
     str += '<h2 id="grinderHead">Grinders</h2>'
+    str += '<hr id="grinderHeadHR">'
     str += '</div>' // end grinderHeader
-    str += '<div id="grinderSizes">'
+    str += '<div class="table-responsive grinderTableCont">'
+    str += '<table class="table table-sm table-borderless grinderTable">'
+    str += '<thead>'
+    str += '<tr>'
+    str += '<th scope="col"></th>'
     for(var i = 0; i < menu.grinders.sizes.length; i++)
     {
-        str += menu.grinders.sizes[i]
+        str += '<th scope="col" class="grinderSizes">' +  menu.grinders.sizes[i] + '</th>'
     }
-    str += '</div>' // end grinderSizes
-    str += '<div id="grinderTypes">'
+    str += '</tr>'
+    str += '</thead>'
+    str += '<tbody>'
+    for (var i = 0; i < menu.grinders.grinderTypes.length; i++)
+    {
+        str += '<tr>'
+        str += '<th scope="row" class="grinderTypes">' + menu.grinders.grinderTypes[i].itemName + '</th>'
+        for(var x = 0; x < menu.grinders.grinderTypes[i].price.length; x++)
+        {
+            str += '<td>' + menu.grinders.grinderTypes[i].price[x] + '</td>'
+        }
+    }
+    str += '</tbody>'
+    str += '</table>' // end grinderTable
+    str += '</div>' // end grinderTableCont
+    str += '<div id="grinderToppings">'
+    str += '<h2 id="toppingHeader">Toppings</h2>'
+    str += '<hr class="grinderHR">'
+    for (var i = 0; i < menu.grinders.toppings.length; i++)
+    {
+        str += menu.grinders.toppings[i] + ' '
+    }
+    str += '</div>' // end grinderToppings
+    str += '<div id="grinderCheeseTypes">'
+    str += '<h2 id="cheeseHeader">Cheese</h2>'
+    str += '<hr class="grinderHR">'
+    for(var i = 0; i < menu.grinders.cheeseTypes.length; i++)
+    {
+        str += menu.grinders.cheeseTypes[i] + ' '
+    }
+    str += '</div>'// end grinderCheeseTypes
+    str += '<div id="grinderCondiments">'
+    str += '<h2 id="condimentsHeader">Condiments</h2>'
+    str += '<hr class="grinderHR">'
+    for (var i = 0; i < menu.grinders.condiments.length; i++)
+    {
+        str += menu.grinders.condiments[i] + ' '
+    }
+    str += '</div>' // end grinderCondiments
+    str += '<div id="grinderExtras">'
+    str += '<h2 id="extrasHeader">Extras</h2>'
+    str += '<hr class="grinderHR">'
+    for(var i = 0; i < menu.grinders.extras.length; i++)
+    {
+        str += menu.grinders.extras[i].itemName
+        str += menu.grinders.extras[i].price
+    }
+    str += '</div>'
+    str += '</div>' // end grinderCont
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*str += '<div id="grinderTypes">'
     for (var i = 0; i < menu.grinders.grinderTypes.length; i++)
     {
         str += menu.grinders.grinderTypes[i].itemName
@@ -151,7 +215,7 @@ hbs.registerHelper("getMenuDataGrinder", (id,cb)=>{
         str += menu.grinders.extras[i].price
     }
     str += '</div>' // end grinderExtras
-    str += '</div>' // end grinderCont
+    str += '</div>' // end grinderCont*/
     return new hbs.handlebars.SafeString(str)
 })
 
@@ -164,24 +228,30 @@ hbs.registerHelper("getDinnerData", ()=>{
     str += '</div>' // end dinnerHeader
     str += '<div id="pastaDinnerCont">'
     str += '<div class="pastaDinner">'
+    str += '<h2 id="pastDinnerHead">Pasta Dinners</h2>'
     for (var i = 0; i < menu.dinners.pastaDinners.pastaTypes.length; i++){
-        str += menu.dinners.pastaDinners.pastaTypes[i]
+        str += menu.dinners.pastaDinners.pastaTypes[i] + ' '
     }
+    str += '<br>'
     str += menu.dinners.pastaDinners.pastaPrices.basePrice
     str += '</div>' // end pastaDinner
     str += '<div class="pastaDinner">'
     for (var i = 0; i < menu.dinners.pastaDinners.toppings.length; i++){
-        str += menu.dinners.pastaDinners.toppings[i]
+        str += menu.dinners.pastaDinners.toppings[i] + ' '
     }
+    str += '<br>'
     str += menu.dinners.pastaDinners.pastaPrices.withTopping
-    str += menu.dinners.pastaDinners.pastaPrices.withMozz
+    str += '<br>'
+    str += 'w/Mozz ' + menu.dinners.pastaDinners.pastaPrices.withMozz
     str += '</div>' // end pastaDinner
     str += '</div>' // end pastaDinnerCont
     str += '<div id="otherDinnersCont">'
+    str += '<h2 id="otherDinHead">Other Dinners</h2>'
     for(var i = 0; i < menu.dinners.otherDinners.length; i++)
     {
-        str += menu.dinners.otherDinners[i].itemName
+        str += menu.dinners.otherDinners[i].itemName + ' '
         str += menu.dinners.otherDinners[i].price
+        str += '<br>'
     }
     str += '</div>' // end otherDinnersCont
     str += '</div>' // end dinnerCont
@@ -196,12 +266,14 @@ hbs.registerHelper("getBreadData", ()=>{
     str += '<h2 id="breadHead">Breads</h2>'
     str += '</div>' // end breadHeader
     str += '<div id="breads">'
+    str += '<h2>Calzones</h2>'
     for(var i = 0; i < menu.breads.breadType.length; i++)
     {
-        str += menu.breads.sizes[i]
-        str += menu.breads.breadType[i].itemName
-        str += menu.breads.breadType[i].price.small
-        str += menu.breads.breadType[i].price.large
+        str += menu.breads.breadType[i].itemName + ' '
+        str += '<br>'
+        str += menu.breads.breadType[i].price.small + ' '
+        str += menu.breads.breadType[i].price.large + ''
+        str += '<br>'
     }
     str += '</div>' // end breads
     str += '</div>' // end breadCont
@@ -214,7 +286,56 @@ hbs.registerHelper("getDataApps", ()=>{
     str += '<div id="appsHeader">'
     str += '<h2 id="appHead">Appetizers</h2>'
     str += '</div>' // end appsHeader
-    str += '<div id="itemSizesNum">'
+    str += '<div class="table-responsive appsNumTableCont">'
+    str += '<table class="table table-sm table-borderless appsNumTable">'
+    str += '<thead>'
+    str += '<tr>'
+    str += '<th scope="col"></th>'
+    str += '<th scope="col"></th>'
+    for(var i = 0; i < menu.appetizers.itemSizesNumeric.length; i++)
+    {
+        str += '<th scope="col" class="appSizesNum">' + menu.appetizers.itemSizesNumeric[i] + '</th>'
+    }
+    str += '</tr>'
+    str += '</thead>'
+    str += '<tbody>'
+    for (var i = 0; i < menu.appetizers.appItems.length; i++)
+    {
+        str += '<tr>'
+        str += '<th scope="col"></th>'
+        str += '<th scope="row" class="appItemName">' + menu.appetizers.appItems[i].itemName + '</th>'
+        for(var x = 0; x < menu.appetizers.appItems[i].price[x]; x++)
+        {
+            str += '<td>' + menu.appetizers.appItems[i].price[x] + '</td>'
+        }
+    }
+    str += '</tbody>'
+    str += '</table>' // end appsNumTable
+    str += '</div>' // end appsNumTableCont
+    str += '<div class="table-responsive appsTextTableCont">'
+    str += '<table class="table table-sm table-borderless appsTextTable">'
+    str += '<thead>'
+    str += '<tr>'
+    str += '<th scope="col"></th>'
+    for(var i = 0; i < menu.appetizers.itemSizesSize.length; i++)
+    {
+        str += '<th scope="col" class="appSizesText">' +  menu.appetizers.itemSizesSize[i] + '</th>'
+    }
+    str += '</tr>'
+    str += '</thead>'
+    str += '<tbody>'
+    for(var i = 0; i < menu.appetizers.appsNonNumericSizes.length; i++)
+    {
+        str += '<tr>'
+        str +=  '<th scope="row" class="appItemName">' + menu.appetizers.appsNonNumericSizes[i].itemName + '</th>'
+        for(var x = 0; x < menu.appetizers.appsNonNumericSizes[i].price.length; x++){
+            str += '<td>' + menu.appetizers.appsNonNumericSizes[i].price[x] + '</td>'
+        }
+    }
+    str += '</table>' // end appsTextTable
+    str += '</div>'// end appsTextTableCont
+    str += '</div>' // end appsCont
+    /*str += '<div id="itemSizesNum">'
     for (var i = 0; i < menu.appetizers.itemSizesNumeric.length; i++)
     {
         str += menu.appetizers.itemSizesNumeric[i]
@@ -243,7 +364,7 @@ hbs.registerHelper("getDataApps", ()=>{
         }
     }
     str += '</div>' // end appItemsNonNum
-    str += '</div>' // end appsCont
+    str += '</div>' // end appsCont*/
     return new hbs.handlebars.SafeString(str)
 })
 

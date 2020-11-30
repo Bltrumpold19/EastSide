@@ -7,7 +7,7 @@
 #specialsCont{
 
 }
-/* Pizza section */
+/* Pizza section ------------------------------------------------------------*/
 #pizzaCont{
     width: 70%;
     height: 550px;
@@ -23,37 +23,51 @@
     /*border: 1px solid green;*/
     margin: 1.5% 10% 0 10%;
 }
-#pizzaTopCont{
-    width: 80%;
-    height: 20%;
-    /*border: 1px solid purple;*/
-    margin: 1.5% 10% 0 10%;
+/* Pizza Text */
+#paraTopping{
+    width: 50%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin: 0 25% 0 25%;
 }
-#sizesCont{
-    width: 80%;
-    height: 8%;
-    border:1px solid orange;
-    margin: 1% 10% 0 10%;
+#pizzaSizes{
+    width: 40%;
+    margin: 0 30% 0 30%;
+/*border: 1px solid red;*/
+    text-align: center;
+    word-spacing: 50px;
 }
-#toppingAmountCont{
-    width: 10%;
-    height: 35%;
-    border: 1px solid aqua;
-    margin: 1% 0% 0 10%;
-    float: left;
+.pizzaPrices{
+    width: 40%;
+    border: 1px solid blue;
+    margin: .5% 0 0 17.5%;
+    text-align: center;
+    word-spacing: 50px;
 }
-#pizzaPriceCont{
+.pizzaTable{
+    width: 40%;
+    margin: 0 30% 0 30%;
+    /*border: 1px solid blue;*/
+}
+.pizzaTableCont{
     width: 80%;
-    height: 35%;
-    border:1px solid red;
-    float: left;
-    margin: 1% 0 0 0;
+    margin: 2% 10% 0% 10%;
+    /*border: 1px solid red;*/
+}
+.sizes{
+    font-size: 1em;
+    font-weight: 450;
+}
+.toppingAmount{
+    font-size: 1em;
+    font-weight: 450;
+}
 
-}
-/* Grinder Section */
+
+/* Grinder Section-------------------------------------------------------- */
 #grinderCont{
     width: 70%;
-    height: 600px;
+    height: 900px;
     border: 1px solid green;
     margin: 2.5% 15% 0 15%;
 }
@@ -63,47 +77,74 @@
     border: 1px solid red;
     margin: 1.5% 10% 0 10%;
 }
-#grinderSizes{
-    width: 80%;
-    height: 5%;
-    border: 1px solid blue;
-    margin: 1.5% 10% 0 10%;
-}
-#grinderTypes{
-    width: 80%;
-    height: 30%;
-    border: 1px solid purple;
-    margin: 1.5% 10% 0 10%;
-}
-#grinderToppings{
+/* Grinder table */
+.grinderTableCont{
     width: 40%;
-    height: 10%;
-    float: left;
-    border: 1px solid orange;
-    margin: 1.5% 0% 0 10%;
-}
-#grinderCheese{
-    width: 40%;
-    height: 10%;
-    float: left;
-    border: 1px solid black;
-    margin: 1.5% 10% 0 0%;
-}
-#grinderCondiments{
-    width: 40%;
-    height: 10%;
+    margin: 1.5% 5% 0 10%;
     float: left;
     border: 1px solid red;
-    margin: 1.5% 0% 0 10%;
 }
+.grinderTable{
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+.grinderSizes{
+    font-size: 1em;
+    font-weight: 450;
+}
+.grinderTypes{
+    font-size: 1em;
+    font-weight: 450;
+}
+/* Grinder Toppings */
+#grinderToppings{
+    width: 40%;
+    margin: 15% 0 0 0%;
+    float: left;
+    text-align: center;
+}
+#toppingHeader{
+    text-align: center;
+}
+#grinderHeadHR{
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+/* Grinder Cheese Types */
+#grinderCheeseTypes{
+    width: 40%;
+    float: left;
+    margin:  1.5% 0 0 0%;
+    text-align: center;
+}
+#cheeseHeader{
+    text-align: center;
+}
+/* Grinder Condiments */
+#grinderCondiments{
+    width: 40%;
+    margin:  1.5% 0 0 0%;
+    float: left;
+    text-align: center;
+}
+#condimentsHeader{
+    text-align: center;
+}
+/* Grinder Extras */
 #grinderExtras{
     width: 40%;
-    height: 10%;
+    margin:  1.5% 0 0 0%;
     float: left;
-    border: 1px solid aqua;
-    margin: 1.5% 10% 0 0%;
+    text-align: center;
 }
-/* Dinner Sections */
+#extrasHeader{
+    text-align: center;
+}
+.grinderHR{
+    width: 80%;
+    margin: 1.5% 10% 1.5% 10%;
+}
+/* Dinner Section -----------------------------------------------------------*/
 #dinnerCont{
     width: 35%;
     height: 500px;
@@ -122,12 +163,14 @@
     height:50%;
     margin: 1.5% 10% 0 10%;
     border: 1px solid black;
+    text-align: center;
 }
 #otherDinnersCont{
     width: 80%;
     height: 30%;
     margin: 1.5% 10% 0 10%;
     border: 1px solid green;
+    text-align: center;
 }
 .pastaDinner{
     width: 90%;
@@ -135,7 +178,15 @@
     margin: 3.5% 5% 0 5%;
     border: 1px solid orange;
 }
-/* Breads Section */
+#otherDinHead{
+    font-size: 2em;
+    text-align: center;
+}
+#pastaDinnerHead{
+    font-size: 2em;
+    text-align: center;
+}
+/* Breads Section ----------------------------------------------------------*/
 #breadCont{
     width: 35%;
     height: 500px;
@@ -225,55 +276,26 @@
 }
 #grinderHead{
     font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    text-align: center;
 }
 #dinnerHead{
     font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    text-align: center;
 }
 #breadHead{
     font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    text-align: center;
 }
 #appHead{
     font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    text-align: center;
 }
 #saladHead{
     font-family: "Times New Roman", Times, serif;
-}
-/* Pizza Text */
-#paraTopping{
-    width: 50%;
-    /*border: 1px solid red;*/
+    font-size: 3em;
     text-align: center;
-    margin: 0 25% 0 25%;
-}
-#pizzaSizes{
-    width: 40%;
-    margin: 0 30% 0 30%;
-/*border: 1px solid red;*/
-    text-align: center;
-    word-spacing: 50px;
-}
-.pizzaPrices{
-    width: 40%;
-    border: 1px solid blue;
-    margin: .5% 0 0 17.5%;
-    text-align: center;
-    word-spacing: 50px;
-}
-.pizzaTable{
-    width: 40%;
-    margin: 0 30% 0 30%;
-    /*border: 1px solid blue;*/
-}
-.pizzaTableCont{
-    width: 80%;
-    margin: 2% 10% 0% 10%;
-    /*border: 1px solid red;*/
-}
-.sizes{
-    font-size: 1em;
-    font-weight: 450;
-}
-.toppingAmount{
-    font-size: 1em;
-    font-weight: 450;
 }
