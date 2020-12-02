@@ -7,8 +7,15 @@ body{
     border: 1px solid red;
     margin-top: 1.5%;
 }
-#specialsCont{
-
+#couponCont{
+    float: right;
+    height: 100%;
+    width: 25%;
+}
+#couponText{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
 }
 /* Pizza section ------------------------------------------------------------*/
 #pizzaCont{
@@ -90,7 +97,7 @@ body{
     width: 35%;
     height: 900px;
     box-shadow: 0px 1px 2.5px grey;
-    margin: 2.5% 10% 0% 2.5%;
+    margin: 2.5% 10% 0% 5%;
     border-radius: 5px;
     background-color: white;
     float: left;
@@ -172,7 +179,7 @@ body{
 /* Dinner Section -----------------------------------------------------------*/
 #dinnerCont{
     width: 35%;
-    height: 900px;
+    height: 500px;
     margin: 2.5% 5% 0 10%;
     box-shadow: 0px 1px 2.5px grey;
     border-radius: 5px;
@@ -187,23 +194,23 @@ body{
 }
 #pastaDinnerCont{
     width: 80%;
-    height:50%;
+    height:45%;
     margin: 1.5% 10% 0 10%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     text-align: center;
 }
 #otherDinnersCont{
     width: 80%;
-    height: 30%;
-    margin: 1.5% 10% 0 10%;
-    border: 1px solid green;
+    height: 35%;
+    margin: 0 10% 0 10%;
+    /*border: 1px solid green;*/
     text-align: center;
 }
 .pastaDinner{
     width: 90%;
-    height: 40%;
+    height: 90%;
     margin: 3.5% 5% 0 5%;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
 }
 #otherDinHead{
     font-size: 2em;
@@ -213,11 +220,19 @@ body{
     font-size: 2em;
     text-align: center;
 }
+#pastaDinnersHR{
+    width: 50%;
+    margin-top: 0;
+}
+#otherDinnersHR{
+    width: 50%;
+    margin-top: 0;
+}
 /* Breads Section ----------------------------------------------------------*/
 #breadCont{
     width: 35%;
-    height: 900px;
-    margin: 2.5% 10% 0 2.5%;
+    height: 500px;
+    margin: 2.5% 10% 0 5%;
     box-shadow: 0px 1px 2.5px grey;
     border-radius: 5px;
     background-color: white;
@@ -234,12 +249,13 @@ body{
     height: 70%;
     margin: 2% 10% 0 10%;
     border: 1px solid red;
+    text-align: center;
 }
 /* Apps Section ------------------------------------------------------------*/
 #appsCont{
     width: 35%;
-    height: 900px;
-    margin: 2.5% 5% 0 10%;
+    height: 525px;
+    margin: 2.5% 5% 5% 10%;
     box-shadow: 0px 1px 2.5px grey;
     border-radius: 5px;
     background-color: white;
@@ -251,35 +267,12 @@ body{
     background-color:  #0d5eaf;
     box-shadow: 0px 1px 5px grey;
 }
-#itemSizesNum{
-    width: 80%;
-    height: 8%;
-    margin: 1.5% 10% 0 10%;
-    border: 1px solid red;
-}
-#appItems{
-    width: 80%;
-    height: 40%;
-    margin: 1.5% 10% 0 10%;
-    border: 1px solid blue;
-}
-#appItemsNonNum{
-    width: 80%;
-    height: 30%;
-    margin: 1.5% 10% 5% 10%;
-    border: 1px solid black;
-}
 .appsNumTableCont{
-    width: 80%;
-    margin: 1.5% 5% 0 10%;
-    float: left;
-    border: 1px solid red;
+    margin-top: 1.5%;
+    width: 100%;
 }
 .appsTextTableCont{
-    width: 80%;
-    margin: 1.5% 5% 0 10%;
-    float: left;
-    border: 1px solid blue;
+    width: 100%;
 }
 .appsNumTable{
     width: 60%;
@@ -287,7 +280,7 @@ body{
 }
 .appsTextTable{
     width: 60%;
-    margin: 0 20% 0 20%;
+    margin: 0 15% 0 22.75%;
 }
 .appSizesNum{
     font-size: 1em;
@@ -301,11 +294,14 @@ body{
     font-size: 1em;
     font-weight: 450;
 }
+.appSplitHR{
+    width: 80%;
+}
 /* Salads Section ----------------------------------------------------------*/
 #saladsCont{
     width: 35%;
-    height: 900px;
-    margin: 2.5% 10% 0 2.5%;
+    height: 525px;
+    margin: 2.5% 10% 0 5%;
     box-shadow: 0px 1px 2.5px grey;
     border-radius: 5px;
     background-color: white;
@@ -317,17 +313,30 @@ body{
     background-color:  #0d5eaf;
     box-shadow: 0px 1px 5px grey; 
 }
-#saladSizes{
-    width: 80%;
-    height: 8%;
-    margin: 1.5% 10% 0 10%;
-    border: 1px solid red;
+.saladTableCont{
+    width: 100%;
+    margin-top: 5%;
 }
-#salads{
-    width: 80%;
-    height: 60%;
-    margin: 1.5% 10% 0 10%;
-    border: 1px solid black;
+.saladTable{
+    width: 90%;
+    margin: 0 0% 0 10%;
+}
+#dressingCont{
+    text-align: center;
+    margin-top:5%;
+}
+.saladTh{
+    font-size: 1em;
+    font-weight: 450;
+}
+.dressingHeader{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
+    text-align: center;
+}
+#dressingHR{
+    width: 50%;
+    margin-top: 0;
 }
 /* Headers */
 #pizzaHead{

@@ -247,13 +247,14 @@ hbs.registerHelper("getDinnerData", ()=>{
     str += '<div id="pastaDinnerCont">'
     str += '<div class="pastaDinner">'
     str += '<h2 id="pastDinnerHead">Pasta Dinners</h2>'
+    str += '<hr id="pastaDinnersHR">'
     for (var i = 0; i < menu.dinners.pastaDinners.pastaTypes.length; i++){
         str += menu.dinners.pastaDinners.pastaTypes[i] + ' '
     }
     str += '<br>'
     str += menu.dinners.pastaDinners.pastaPrices.basePrice
-    str += '</div>' // end pastaDinner
-    str += '<div class="pastaDinner">'
+    str += '<br>'
+    str += 'With '
     for (var i = 0; i < menu.dinners.pastaDinners.toppings.length; i++){
         str += menu.dinners.pastaDinners.toppings[i] + ' '
     }
@@ -265,6 +266,7 @@ hbs.registerHelper("getDinnerData", ()=>{
     str += '</div>' // end pastaDinnerCont
     str += '<div id="otherDinnersCont">'
     str += '<h2 id="otherDinHead">Other Dinners</h2>'
+    str += '<hr id="otherDinnersHR">'
     for(var i = 0; i < menu.dinners.otherDinners.length; i++)
     {
         str += menu.dinners.otherDinners[i].itemName + ' '
@@ -305,6 +307,7 @@ hbs.registerHelper("getDataApps", ()=>{
     str += '<h2 id="appHead">Appetizers</h2>'
     str += '</div>' // end appsHeader
     str += '<div class="table-responsive appsNumTableCont">'
+    str +='<hr class="appSplitHR">'
     str += '<table class="table table-sm table-borderless appsNumTable">'
     str += '<thead>'
     str += '<tr>'
@@ -331,6 +334,7 @@ hbs.registerHelper("getDataApps", ()=>{
     str += '</table>' // end appsNumTable
     str += '</div>' // end appsNumTableCont
     str += '<div class="table-responsive appsTextTableCont">'
+    str +='<hr class="appSplitHR">'
     str += '<table class="table table-sm table-borderless appsTextTable">'
     str += '<thead>'
     str += '<tr>'
@@ -392,7 +396,40 @@ hbs.registerHelper("getDataSalads", ()=>{
     str += '<div id="saladsHead">'
     str += '<h2 id="saladHead">Salads</h2>'
     str += '</div>' // end saladsHead
-    str += '<div id="saladSizes">'
+    str += '<div class="table-responsive saladTableCont">'
+    str += '<table class="table table-sm table-borderless saladTable">'
+    str += '<thead>'
+    str += '<tr>'
+    str += '<th scope="col"></th>'
+    for(var i = 0; i < menu.salads.itemSizes.length; i++){
+        str += '<th scope="col" class="saladTh">' + menu.salads.itemSizes[i] + '</th>'
+    }
+    str += '</tr>'
+    str += '</thead>'
+    str += '<tbody>'
+    for(var i = 0; i < menu.salads.items.length; i++){
+        str += '<tr>'
+        str += '<th scope="row" class="saladTh">' + menu.salads.items[i].itemName
+        for(var x = 0; x < menu.salads.items[i].price.length; x++){
+            str += '<td>' + menu.salads.items[i].price[x] + '</td>'
+        }
+        str += '</tr>'
+    }
+    str += '</tbody>'
+    str += '</table>' // end saladTable
+    str += '</div>' // end saladTableCont
+    str += '<div id="dressingCont">'
+    str += '<h2 id="dressingHeader">Dressings</h2>'
+    str += '<hr id="dressingHR">'
+    for(var i = 0; i < menu.dressings.dressingNames.length; i++)
+    {
+        str += menu.dressings.dressingNames[i] + ' '
+    }
+    str += '</div>'
+    str += '</div>' // end saladsCont
+
+
+   /* str += '<div id="saladSizes">'
     for(var i = 0; i < menu.salads.itemSizes.length; i++){
         str += menu.salads.itemSizes[i]
     }
@@ -406,8 +443,7 @@ hbs.registerHelper("getDataSalads", ()=>{
             str += menu.salads.items[i].price[x]
         }      
     }
-    str += '</div>' // end salads
-    str += '</div>' // end saladsCont
+    str += '</div>' // end salads*/
     return new hbs.handlebars.SafeString(str)
 })
 
