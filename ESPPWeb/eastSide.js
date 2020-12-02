@@ -21,9 +21,11 @@ hbs.registerHelper("getMenuDataPizza", (id,cb)=>{
     str += '<div id="pizzaCont">'
     str += '<div id="pizzaContHead">'
     str += '<h2 id="pizzaHead">Pizza</h2>'
-    str += '<hr id="hrHeadPizza">'
+    //str += '<hr id="hrHeadPizza">'
     str += '</div>' //  end pizzaContHead
     str += '<div id="pizzaTopCont">'
+    str += '<h2 id="topHead">Toppings</h2>'
+    str += '<hr id="pizzaTopHead">'
     str += '<p id="paraTopping">'
     for (var i = 0; i < menu.pizza.pizzaToppings.length; i++)
     {
@@ -58,6 +60,22 @@ hbs.registerHelper("getMenuDataPizza", (id,cb)=>{
     str += '</tbody>'
     str += '</table>'
     str += '</div>' // end tableDiv
+    str += '<div id="specialCont">'
+    str += '<h2 id="specialTopHead">Special Toppings</h2>'
+    str += '<hr id="specialTopHR">'
+    str += '<p class="specialPara">'
+    for(var i = 0; i < menu.pizza.specialPizzaToppings.length; i++)
+    {
+        str += menu.pizza.specialPizzaToppings[i] + ' '
+    }
+    str += '</p>'
+    str += '<p class="specialPara">'
+    for(var i = 0; i < menu.pizza.prices.specialTop.length; i++)
+    {
+        str += menu.pizza.prices.specialTop[i] + ' '
+    }
+    str += '</p>'
+    str += '</div>'
     str += '</div>'
 
     //str += '<div id="pizzaTopCont">'
@@ -109,7 +127,6 @@ hbs.registerHelper("getMenuDataGrinder", (id,cb)=>{
     str += '<div id="grinderCont">'
     str += '<div id="grinderHeader">'
     str += '<h2 id="grinderHead">Grinders</h2>'
-    str += '<hr id="grinderHeadHR">'
     str += '</div>' // end grinderHeader
     str += '<div class="table-responsive grinderTableCont">'
     str += '<table class="table table-sm table-borderless grinderTable">'
@@ -164,8 +181,9 @@ hbs.registerHelper("getMenuDataGrinder", (id,cb)=>{
     str += '<hr class="grinderHR">'
     for(var i = 0; i < menu.grinders.extras.length; i++)
     {
-        str += menu.grinders.extras[i].itemName
+        str += menu.grinders.extras[i].itemName + ' '
         str += menu.grinders.extras[i].price
+        str += '<br>'
     }
     str += '</div>'
     str += '</div>' // end grinderCont

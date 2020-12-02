@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(233, 233, 233);
+}
 #topCont{
     width: 100%;
     height: 200px;
@@ -9,84 +12,106 @@
 }
 /* Pizza section ------------------------------------------------------------*/
 #pizzaCont{
-    width: 70%;
-    height: 550px;
-    /*-moz-box-shadow: 0 0 3px grey;
-    -webkit-box-shadow: 0 0 10px grey;
-    box-shadow: 0px 2px 5px #888, 0px -2px 5px #888;*/
-    margin: 2.5% 15% 0 15%;
-    border-radius: 2px;
+    width: 35%;
+    height: 900px;
+    margin: 2.5% 5% 0 10%;
+    box-shadow: 0px 1px 2.5px grey;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
 }
 #pizzaContHead{
-    width: 80%;
-    height: 20%;
-    /*border: 1px solid green;*/
-    margin: 1.5% 10% 0 10%;
+    width: 100%;
+    height: 50px;
+    background-color:  #0d5eaf;
+    box-shadow: 0px 1px 5px grey;
+}
+#pizzaTopCont{
+    width: 100%;
+    /*margin: 1.5% 10% 0 10%;*/
+    margin-top:1.5% ;
+    border-top:1px solid black ;
+    border-bottom:1px solid black;
 }
 /* Pizza Text */
 #paraTopping{
     width: 50%;
     /*border: 1px solid red;*/
     text-align: center;
-    margin: 0 25% 0 25%;
+    margin: 1.5% 25% 0 25%;
 }
-#pizzaSizes{
-    width: 40%;
-    margin: 0 30% 0 30%;
-/*border: 1px solid red;*/
+#topHead{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
     text-align: center;
-    word-spacing: 50px;
 }
-.pizzaPrices{
-    width: 40%;
-    border: 1px solid blue;
-    margin: .5% 0 0 17.5%;
-    text-align: center;
-    word-spacing: 50px;
+#pizzaTopHead{
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .pizzaTable{
-    width: 40%;
-    margin: 0 30% 0 30%;
+    width: 90%;
+    /*margin: 0 30% 0 30%;*/
+    margin: 1.5% 0 0 10%;
     /*border: 1px solid blue;*/
 }
 .pizzaTableCont{
-    width: 80%;
-    margin: 2% 10% 0% 10%;
+    width: 100%;
+    /*margin: 2% 10% 0% 10%;*/
     /*border: 1px solid red;*/
 }
 .sizes{
-    font-size: 1em;
-    font-weight: 450;
+    font-size: 1.25em;
+    font-weight: 400;
 }
 .toppingAmount{
-    font-size: 1em;
-    font-weight: 450;
+    font-size: 1.25em;
+    font-weight: 400;
 }
-
-
+#specialCont{
+    width: 100%;
+    margin-top:10%;
+}
+#specialTopHead{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
+    text-align: center;
+}
+#specialTopHR{
+    width: 50%;
+    margin-top: 0;
+}
+.specialPara{
+    text-align: center;
+}
 /* Grinder Section-------------------------------------------------------- */
 #grinderCont{
-    width: 70%;
+    width: 35%;
     height: 900px;
-    border: 1px solid green;
-    margin: 2.5% 15% 0 15%;
+    box-shadow: 0px 1px 2.5px grey;
+    margin: 2.5% 10% 0% 2.5%;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
 }
 #grinderHeader{
-    width: 80%;
-    height: 15%;
-    border: 1px solid red;
-    margin: 1.5% 10% 0 10%;
+    width: 100%;
+    height: 50px;
+    background-color:  #0d5eaf;
+    box-shadow: 0px 1px 5px grey;
 }
 /* Grinder table */
 .grinderTableCont{
-    width: 40%;
-    margin: 1.5% 5% 0 10%;
+    width: 35%;
+    margin: 5% 5% 0 10%;
     float: left;
-    border: 1px solid red;
+    /*-moz-box-shadow: 0 0 3px grey;
+    -webkit-box-shadow: 0 0 10px grey;
+    box-shadow:20px 20px 10px grey;*/
 }
 .grinderTable{
-    width: 50%;
-    margin: 0 25% 0 25%;
+    width: 100%;
 }
 .grinderSizes{
     font-size: 1em;
@@ -98,8 +123,8 @@
 }
 /* Grinder Toppings */
 #grinderToppings{
-    width: 40%;
-    margin: 15% 0 0 0%;
+    width: 35%;
+    margin: 35% 10% 0 5%;
     float: left;
     text-align: center;
 }
@@ -112,9 +137,9 @@
 }
 /* Grinder Cheese Types */
 #grinderCheeseTypes{
-    width: 40%;
+    width: 35%;
+    margin: 1.5% 10% 0 5%;
     float: left;
-    margin:  1.5% 0 0 0%;
     text-align: center;
 }
 #cheeseHeader{
@@ -122,8 +147,8 @@
 }
 /* Grinder Condiments */
 #grinderCondiments{
-    width: 40%;
-    margin:  1.5% 0 0 0%;
+    width: 35%;
+    margin: 1.5% 10% 0 5%;
     float: left;
     text-align: center;
 }
@@ -132,8 +157,8 @@
 }
 /* Grinder Extras */
 #grinderExtras{
-    width: 40%;
-    margin:  1.5% 0 0 0%;
+    width: 35%;
+    margin: 1.5% 10% 0 5%;
     float: left;
     text-align: center;
 }
@@ -147,16 +172,18 @@
 /* Dinner Section -----------------------------------------------------------*/
 #dinnerCont{
     width: 35%;
-    height: 500px;
+    height: 900px;
+    margin: 2.5% 5% 0 10%;
+    box-shadow: 0px 1px 2.5px grey;
+    border-radius: 5px;
+    background-color: white;
     float: left;
-    margin: 2.5% 0 0 15%;
-    border: 1px solid red;
 }
 #dinnerHeader{
-    width: 80%;
-    height: 10%;
-    margin: 1.5% 10% 0 10%;
-    border: 1px solid blue;
+    width: 100%;
+    height: 50px;
+    background-color:  #0d5eaf;
+    box-shadow: 0px 1px 5px grey;
 }
 #pastaDinnerCont{
     width: 80%;
@@ -189,16 +216,18 @@
 /* Breads Section ----------------------------------------------------------*/
 #breadCont{
     width: 35%;
-    height: 500px;
+    height: 900px;
+    margin: 2.5% 10% 0 2.5%;
+    box-shadow: 0px 1px 2.5px grey;
+    border-radius: 5px;
+    background-color: white;
     float: left;
-    margin: 2.5% 15% 0 0%;
-    border: 1px solid blue;
 }
 #breadHeader{
-    width: 80%;
-    height: 10%;
-    margin: 2% 10% 0 10%;
-    border: 1px solid green;
+    width: 100%;
+    height: 50px;
+    background-color:  #0d5eaf;
+    box-shadow: 0px 1px 5px grey;
 }
 #breads{
     width: 80%;
@@ -206,19 +235,21 @@
     margin: 2% 10% 0 10%;
     border: 1px solid red;
 }
-/* Apps Section */
+/* Apps Section ------------------------------------------------------------*/
 #appsCont{
     width: 35%;
-    height: 500px;
+    height: 900px;
+    margin: 2.5% 5% 0 10%;
+    box-shadow: 0px 1px 2.5px grey;
+    border-radius: 5px;
+    background-color: white;
     float: left;
-    margin: 2.5% 0 0 15%;
-    border: 1px solid purple;
 }
 #appsHeader{
-    width: 80%;
-    height: 10%;
-    margin: 2% 10% 0 10%;
-    border: 1px solid green;
+    width: 100%;
+    height: 50px;
+    background-color:  #0d5eaf;
+    box-shadow: 0px 1px 5px grey;
 }
 #itemSizesNum{
     width: 80%;
@@ -238,19 +269,53 @@
     margin: 1.5% 10% 5% 10%;
     border: 1px solid black;
 }
-/* Salads Section */
-#saladsCont{
-    width: 35%;
-    height: 500px;
+.appsNumTableCont{
+    width: 80%;
+    margin: 1.5% 5% 0 10%;
     float: left;
-    margin: 2.5% 15% 0 0%;
+    border: 1px solid red;
+}
+.appsTextTableCont{
+    width: 80%;
+    margin: 1.5% 5% 0 10%;
+    float: left;
     border: 1px solid blue;
 }
+.appsNumTable{
+    width: 60%;
+    margin: 0 20% 0 20%;
+}
+.appsTextTable{
+    width: 60%;
+    margin: 0 20% 0 20%;
+}
+.appSizesNum{
+    font-size: 1em;
+    font-weight: 450;
+}
+.appItemName{
+    font-size: 1em;
+    font-weight: 450;
+}
+.appSizesText{
+    font-size: 1em;
+    font-weight: 450;
+}
+/* Salads Section ----------------------------------------------------------*/
+#saladsCont{
+    width: 35%;
+    height: 900px;
+    margin: 2.5% 10% 0 2.5%;
+    box-shadow: 0px 1px 2.5px grey;
+    border-radius: 5px;
+    background-color: white;
+    float: left;
+}
 #saladsHead{
-    width: 80%;
-    height: 10%;
-    margin: 2% 10% 0 10%;
-    border: 1px solid green; 
+    width: 100%;
+    height: 50px;
+    background-color:  #0d5eaf;
+    box-shadow: 0px 1px 5px grey; 
 }
 #saladSizes{
     width: 80%;
@@ -269,6 +334,7 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     text-align: center;
+    color: white;
 }
 #hrHeadPizza{
     width: 50%;
@@ -278,24 +344,33 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     text-align: center;
+    color: white;
 }
 #dinnerHead{
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     text-align: center;
+    color: white;
 }
 #breadHead{
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     text-align: center;
+    color: white;
 }
 #appHead{
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     text-align: center;
+    color: white;
 }
 #saladHead{
     font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     text-align: center;
+    color: white;
+}
+td{
+    font-size: 1.25em;
+    font-weight: 200;
 }
