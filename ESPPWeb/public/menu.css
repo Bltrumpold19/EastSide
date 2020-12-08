@@ -4,19 +4,61 @@ body{
 #topCont{
     width: 100%;
     height: 200px;
-    border: 1px solid red;
     margin-top: 1.5%;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2.5px grey;
+    border: 1px solid black;
+    background-color: white;
 }
 #couponCont{
     float: right;
-    height: 100%;
     width: 25%;
+    height: 100%;
+    text-align: center;
+}
+#specialsCont{
+    width: 25%;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+#couHead{
+}
+#leftCont{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+#botCont{
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    clear: both;
+}
+/*#couponCont{
+    float: left;
+    width: 50%;
+    height: 100%;
 }
 #couponText{
     width: 100%;
     text-align: center;
-    margin-top: 5%;
 }
+#specialsCont{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+#dinSpecHead{
+    margin-bottom: 0;
+}
+#midCont{
+    width: 90%;
+    height: 200px;
+    margin: 1.5% 5% 1.5% 5%;
+    border: 1px solid blue;
+}*/
 /* Pizza section ------------------------------------------------------------*/
 #pizzaCont{
     width: 35%;

@@ -295,6 +295,7 @@ hbs.registerHelper("getBreadData", ()=>{
         str += menu.breads.breadType[i].price.large + ''
         str += '<br>'
     }
+    str += '<p>Each additional item or extra sauce 1.99</p>'
     str += '</div>' // end breads
     str += '</div>' // end breadCont
     return new hbs.handlebars.SafeString(str)

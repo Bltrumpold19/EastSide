@@ -30,6 +30,15 @@ a:hover{
     color: gray;
     text-decoration: none;
     transition-duration: .20s;
-    transition-timing-function: ease;
-    
+    transition-timing-function: ease;  
+}
+#phone{
+    float: right;
+    width:10%;
+    height: 100%;
+    text-align: center;
+}
+#phoneNum{
+    color: white;
+    margin-top: 8.5%;
 }
